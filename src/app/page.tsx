@@ -4,7 +4,6 @@ import { motion, LazyMotion, domAnimation } from 'framer-motion';
 import { Github,  Linkedin, Mail, Download, Code, Database, Globe, ExternalLink, Calendar, MapPin } from 'lucide-react';
 import { LuUser } from "react-icons/lu";
 import Link from 'next/link';
-import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/lib/data';
