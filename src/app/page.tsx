@@ -7,6 +7,7 @@ import Link from 'next/link';
 import ContactForm from '@/components/ContactForm';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/lib/data';
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                   <Calendar size={16} />
-                  <span>1 year experience</span>
+                  <span>1 year experience with React.js</span>
                 </div>
               </div>
 
@@ -187,7 +188,7 @@ export default function Home() {
               className="text-center p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">1+</div>
-              <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">Year Experience</div>
+              <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">Year Experience Of working with React.js</div>
               <div className="text-xs text-gray-600 dark:text-gray-300">Continuous learning and skill development</div>
             </motion.div>
           </div>
@@ -475,6 +476,7 @@ export default function Home() {
         </div>
       </section>
       </div>
+      <Analytics/>
     </LazyMotion>
   );
 }
